@@ -29,8 +29,6 @@ let b = a;
 b.push(30);
 console.log(a);
 [10, 20, 30]
-
-
 ```
 ---
 ### Explanation:
@@ -41,5 +39,62 @@ In JavaScript, arrays are reference types. This means that when you assign an ar
 - b.push(30); modifies the array by adding the element 30 to it. Since a and b reference the same array, the change is reflected in both variables.
 - As a result, when console.log(a); is executed, it outputs the modified array [10, 20, 30].
 
+---
+## Question 2 
+```javascript
+console.log([1]==1) //true
+```
+### Explanation:
+In JavaScript, when comparing an array to a number with the == operator, type coercion occurs. The array [1] is first converted to a string '1', and then to the number 1, making the comparison 1 == 1, which evaluates to true.
+---
+## Question 3
+```javascript
+
+// Question 3 
+x=10;
+console.log(x)
+var x; 
+// output 10
+
+```
+---
+### Explanation:
+- The declaration var x; is hoisted to the top of the scope.
+- The variable x is declared but not initialized at the top. When x = 10; is executed, x is assigned the value 10.
+- Finally, console.log(x); prints 10 to the console.
+
+
+
+## Question 4
+```javascript
+let {length} = 'nitin';
+console.log(length); // Output: 5
+```
+---
+### Explanation:
+---
+In JavaScript, you can use destructuring assignment to extract values from arrays or objects into distinct variables. In this case, the code uses destructuring to extract the length property from the string 'nitin'.
+Here’s the step-by-step explanation:
+- String Property Access: In JavaScript, strings have properties like length. When you write 'nitin', it is a string object that has a length property with a value of 5 (because the string 'nitin' has 5 characters).
+- Destructuring Assignment: The syntax let {length} = 'nitin'; uses destructuring to extract the length property from the string 'nitin' and assigns its value (5) to the variable length.
+- Logging the Value: console.log(length); prints the value of length to the console, which is 5.
+---
+
+## Question 5
+```javascript
+let x = 10 > 9 > 8; // Evaluates as (10 > 9) > 8
+console.log(x); // Outputs: false
+```
+---
+### Explanation:
+---
+#### Explanation of `10 > 9 > 8` in JavaScript
+- ##### First Comparison (`10 > 9`):
+This evaluates to `true` because `10` is greater than `9`.
+- ###### Conversion to Number:
+The result of `10 > 9` is `true`. When `true` is involved in a numeric comparison, it is coerced to `1`.
+- ##### Second Comparison (`1 > 8`):
+Now, the expression becomes `1 > 8`, which evaluates to `false` because `1` is not greater than `8`.
+---
 
 
