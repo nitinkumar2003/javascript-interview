@@ -41,3 +41,12 @@ var x;
 // let x=1;
 // x=x++;
 // console.log(x) //1
+
+
+// Question 8
+// let data={
+//     name:"nitin",
+//     name:'Chaudhary'
+// }
+
+// console.log(data.name) // Chaudhary

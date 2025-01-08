@@ -166,7 +166,36 @@ let x = 1;
 x = x++;  // First x++ returns 1, then x is incremented to 2, but 1 is assigned back to x.
 console.log(x);  // Output: 1
 
+```
 
 ---
 
-##Question 8
+## Question 8
+
+##  Explanation of Object Property Overwriting in JavaScript
+
+### Code Example:
+
+```javascript
+let data = {
+    name: "nitin",
+    name: 'Chaudhary'
+};
+
+console.log(data.name);
+
+## Explanation of Object Property Overwriting in JavaScript
+
+### Explanation:
+
+In JavaScript, when you define an object with two properties that have the same name, the second property will **overwrite** the first one.
+
+### 1. First Property:
+- The object `data` is first defined with the property `name` set to `"nitin"`.
+
+### 2. Second Property:
+- The `name` property is redefined with the value `'Chaudhary'`. In JavaScript, if you define a property with the same name twice, the **second value** will replace the first one.
+
+### Final Value:
+- After defining both properties, the object will only have one `name` property with the value `'Chaudhary'`. The earlier value of `"nitin"` is overwritten.
+
