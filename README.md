@@ -131,3 +131,42 @@ console.log(delete age);   // Output: true
 ### Key Points:
 - The `delete` operator works only on **object properties** and **array elements**.
 - `delete` **cannot** delete variables declared using `let`, `const`, or `var` in the global or local scope.
+
+
+
+
+---
+## Question 7
+
+
+## Explanation of Post-Increment (`x = x++`) Behavior
+
+### 1. Post-Increment (`x++`)
+
+- **Post-increment** means that the value of `x` is used **first**, and then `x` is incremented **afterwards**.
+- The expression `x++` **returns** the current value of `x` and then **increments** it.
+
+### 2. Understanding the Expression `x = x++`
+
+The expression `x = x++` is evaluated in two parts:
+
+1. **First**, `x++` returns the **current value** of `x` (which is `1`), and then increments `x` to `2`.
+2. **Second**, the result of `x++` (which is `1`) is assigned **back** to `x`, effectively **overwriting** the incremented value of `x` (which is `2`).
+
+As a result, `x` ends up being `1`, not `2`.
+
+### Final Value of `x`:
+
+After executing `x = x++`, the value of `x` remains `1` because the original value (before increment) was assigned back to `x`.
+
+### Code Example:
+
+```javascript
+let x = 1;
+x = x++;  // First x++ returns 1, then x is incremented to 2, but 1 is assigned back to x.
+console.log(x);  // Output: 1
+
+
+---
+
+##Question 8

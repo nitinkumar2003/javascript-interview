@@ -35,3 +35,9 @@ var x;
 
 // console.log(delete name); // false
 // console.log(delete age) // true
+
+
+// Question 7
+// let x=1;
+// x=x++;
+// console.log(x) //1
