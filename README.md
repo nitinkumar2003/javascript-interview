@@ -94,7 +94,40 @@ This evaluates to `true` because `10` is greater than `9`.
 - ###### Conversion to Number:
 The result of `10 > 9` is `true`. When `true` is involved in a numeric comparison, it is coerced to `1`.
 - ##### Second Comparison (`1 > 8`):
-Now, the expression becomes `1 > 8`, which evaluates to `false` because `1` is not greater than `8`.
+- Now, the expression becomes `1 > 8`, which evaluates to `false` because `1` is not greater than `8`.
 ---
 
 
+## Question 6
+
+In JavaScript, the `delete` operator is used to remove properties from objects. It is important to understand that `delete` behaves differently depending on the type of variable being deleted (whether it’s a property of an object or a variable).
+
+### Explanation of the code:
+
+```javascript
+const name = 'nitin';
+age = 22;
+
+console.log(delete name);  // Output: false
+console.log(delete age);   // Output: true
+
+
+```
+## Explanation of `delete` Operator in JavaScript
+
+### 1. `delete name`
+
+- `name` is declared using `const`, which makes it a constant. Constants cannot be deleted or reassigned after their declaration.
+- The `delete` operator only works on **object properties** or **array elements**.
+- Since `name` is a constant, `delete name` will **fail** and return `false`.
+
+### 2. `delete age`
+
+- `age` is declared as a global variable (since no `let`, `const`, or `var` is used).
+- Variables declared with `var`, `let`, or `const` in the global scope **cannot** be deleted directly.
+- However, if you are not using `const` or `let` for declaration (i.e., a non-declared variable in the global scope), it can be deleted from the global object (`window` in browsers, `global` in Node.js).
+- In this case, because `age` is implicitly a global variable (not declared with `let`, `const`, or `var`), the `delete` operator **removes** it from the global context and returns `true`.
+
+### Key Points:
+- The `delete` operator works only on **object properties** and **array elements**.
+- `delete` **cannot** delete variables declared using `let`, `const`, or `var` in the global or local scope.

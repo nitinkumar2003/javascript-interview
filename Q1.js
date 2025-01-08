@@ -26,3 +26,12 @@ var x;
 // let x= 10>9>8
 // console.log(x)
 // output false
+
+
+
+// QUestion 6
+// const name='nitin';
+// age=22
+
+// console.log(delete name); // false
+// console.log(delete age) // true
