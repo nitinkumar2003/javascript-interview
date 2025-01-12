@@ -199,3 +199,46 @@ In JavaScript, when you define an object with two properties that have the same 
 ### Final Value:
 - After defining both properties, the object will only have one `name` property with the value `'Chaudhary'`. The earlier value of `"nitin"` is overwritten.
 
+```
+
+---
+## Question 9
+---
+```javascript
+const array = [1, 2, 3, 4];
+
+console.log(1 in array);  // checks if index 1 exists in array  -true
+console.log(2 in array);  // checks if index 2 exists in array  -true
+console.log(3 in array);  // checks if index 3 exists in array  -true
+console.log(4 in array);  // checks if index 4 exists in array  -false
+
+
+```
+
+
+---
+## Question 10
+---
+```javascript
+let x ="8"
+let a=1;
+// console.log(+z+a+1) //10
+
+
+```
+
+---
+## Question 11
+---
+```javascript
+
+let obj={
+    age:24
+}
+
+let {age:userage}=obj
+console.log(userage)//24
+console.log(age)  // console.log(age) ReferenceError: age is not defined
+
+
+```

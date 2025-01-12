@@ -50,3 +50,31 @@ var x;
 // }
 
 // console.log(data.name) // Chaudhary
+
+
+// Questtion 9;
+
+const array = [1, 2, 3, 4];
+
+console.log(1 in array);  // checks if index 1 exists in array  -true
+console.log(2 in array);  // checks if index 2 exists in array  -true
+console.log(3 in array);  // checks if index 3 exists in array  -true
+console.log(4 in array);  // checks if index 4 exists in array  -false
+
+
+
+// QUestion 10
+// let x ="8"
+// let a=1;
+// console.log(+z+a+1) //10
+
+
+
+// Question 11
+// let obj={
+//     age:24
+// }
+
+// let {age:userage}=obj
+// console.log(userage) //24
+// console.log(age) //// console.log(age) ReferenceError: age is not defined
