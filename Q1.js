@@ -78,3 +78,23 @@ console.log(4 in array);  // checks if index 4 exists in array  -false
 // let {age:userage}=obj
 // console.log(userage) //24
 // console.log(age) //// console.log(age) ReferenceError: age is not defined
+
+
+
+//Question 12
+// let arr=[1,2]
+// for(var i=0;i<arr.length;i++){
+//     setTimeout(()=>{
+//         console.log(i)  // 2 2
+//     },1000)
+// }
+
+//Question 13
+// let a=[1]
+// let b=[2]
+// console.log(a+b) //12
+
+// Question 14
+
+// console.log([]==[]) //false
+

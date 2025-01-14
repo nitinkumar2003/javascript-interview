@@ -242,3 +242,38 @@ console.log(age)  // console.log(age) ReferenceError: age is not defined
 
 
 ```
+
+---
+## Question 12
+---
+```javascript
+
+let arr=[1,2]
+for(var i=0;i<arr.length;i++){
+    setTimeout(()=>{
+        console.log(i)  // 2 2
+    },1000)
+}
+
+```
+
+---
+## Question 13
+---
+```javascript
+let a=[1]
+let b=[2]
+console.log(a+b) //12
+
+```
+
+---
+## Question 14
+---
+```javascript
+console.log([]==[]) //false  
+// Refrence and difference location
+
+```
+
+
